@@ -23,7 +23,7 @@ app.listen(port, '0.0.0.0', (err) => {
     console.log(err);
   }
 
-  console.info(`>>> 🌎abk - login service API is up and running. Open http://0.0.0.0:${port}/ in your browser. Environment: ${env}`);
+  console.info(`>>> 🌎abk - login service API is up and running. Open http://0.0.0.0:${port}/ in your browser.`);
 });
 
 

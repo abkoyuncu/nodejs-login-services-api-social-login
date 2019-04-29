@@ -1,5 +1,5 @@
 {
-  "name": "login services",
+  "name": "login-services",
   "version": "1.0.0",
   "description": "node js based login api",
   "main": "index.js",

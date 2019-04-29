@@ -2,12 +2,6 @@ const jwt = require('jsonwebtoken');
 const User = require('../schemas/User');
 const key = require('../../config/secret');
 const axios = require('axios');
-const urls = require('../../config/urls');
-const get = require('lodash/get');
-
-
-const env = process.env.ENVIRONMENT || 'development';
-const baseUrlOfApplication = get(urls.application,env,urls.application.development);
 
 function tokenForUser(user) {
   return jwt.sign({ id: user.id, role: user.role,name:user.name }, key, {expiresIn:'30d'});
